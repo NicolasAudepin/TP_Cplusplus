@@ -36,6 +36,15 @@ void Point::shift(int _x, int _y){
     y+=_y;
 }
 
+void Point::moveTo(int _x, int _y){
+    x=_x;
+    y=_y;
+}
+
+void Point::moveTo(Point p){
+    x=p.get_x();
+    y=p.get_y();
+}
 
 void Point::set_x(int _x){
     x=_x;
@@ -44,11 +53,11 @@ void Point::set_y(int _y){
     y=_y;
 };
 
-int Point::get_x(){
+int Point::get_x() const {
     return(x);
 };
 
-int Point::get_y(){
+int Point::get_y() const{
     return y;
 };
 
