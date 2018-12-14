@@ -14,6 +14,7 @@ class Point{
     void shift(int x, int y);
     void moveTo(int x, int y);
     void moveTo(Point p);
+    void moveTo(Point * p);
 
     void set_x(int x);
     void set_y(int y);
